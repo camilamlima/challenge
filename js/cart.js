@@ -6,7 +6,9 @@ cart_button.addEventListener("click", async (event) => {
   const arrayProducts = await fetchProducts();
   cart_content.innerHTML = `
     <div class= "cart">
-        ${createProductDiv(arrayProducts)}
+        <div class="products">
+          ${createProductDiv(arrayProducts)}
+        </div>
         <div class="total">
             <span class="valor__total">Total do pedido: R$ ${totalPrice(arrayProducts)} </span>
         </div>
@@ -37,8 +39,11 @@ function createProductDiv(products) {
     listaProdutos.push(
         `<div class="product">
             <div class="product__image"><img src="${item.image}" alt="${item.name}" /></div>
-            <div class="product__description"> ${item.name}
-                <span>QTY: ${item.quantity}</span> <span>Preço: R$ ${item.bestPriceFormated}</span>
+            <div class="product__description"> 
+                <div class="text">${item.name}</div>
+                <br />
+                <span class="qty">Qtd: ${item.quantity}</span> 
+                <span class="price">${item.bestPriceFormated}</span>
             </div>
         </div>`
     )

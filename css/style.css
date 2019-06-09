@@ -1,13 +1,10 @@
 body {
   margin: 0;
-  overflow-x: hidden;
   font-family: 'Montserrat', sans-serif; }
 
 .topbar {
   display: flex;
   justify-content: space-between;
-  /*padding-right: 70px;*/
-  /*padding-left: 50px;*/
   box-shadow: 0 -9px 10px 5px rgba(0, 0, 0, 0.5);
   height: 74.4px; }
 
@@ -68,14 +65,16 @@ body {
   color: #fff; }
 
 .cart {
-  width: 325.2px;
+  width: 330px;
   height: 466.8px;
   border: 1px solid;
   position: relative;
   float: right;
   right: 20px;
   top: 10px;
-  background-color: #DCDCDC; }
+  background-color: #e6e6e6; 
+  font-size: small;
+}
   
 .cart:before {
     content: "";
@@ -91,23 +90,54 @@ body {
     position: absolute;
     top: -15px;
 }  
+.products {
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 80%;
+  background-color: #f0f0f0;
+}
 
 .product {
   height: 120px;
-  border: 1px solid;
-  color: grey;
+  border-bottom: 1px solid;
+  color: black;
   display: flex;
-  background-color: #DCDCDC; }
+  margin: 10px;
+}
+.product:last-child{
+  border-bottom: none;
+}
 
 .product__image {
   width: 35%;
-  border: 1px solid;
-  background-color: #DCDCDC; }
+  
+}
+.product__image img{
+  width: 100%;
+}
 
 .product__description {
   width: 65%;
-  border: 1px solid;
-  color: grey; }
+  color: grey; 
+  padding: 10px;
+}
+
+.product__description .text{
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product__description .qty{
+  color: black;
+  
+}
+
+.product__description .price{
+  color: green;
+  font-weight: bolder;
+  float: right;
+}
 
 .valor {
   width: 100%;
