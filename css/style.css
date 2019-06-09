@@ -32,6 +32,7 @@ body {
 .topbar__menu__user {
   position: absolute;
   right: 20px;
+  cursor:pointer;
 }
 
 .topbar__menu__item {
@@ -75,6 +76,21 @@ body {
   right: 20px;
   top: 10px;
   background-color: #DCDCDC; }
+  
+.cart:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid black;
+    right: 0;
+    position: absolute;
+    top: -15px;
+}  
 
 .product {
   height: 120px;

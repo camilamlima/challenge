@@ -8,9 +8,10 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="./css/mediaquery.css" />
+        
        </head>
     <body>
-    <div id="content">
+        <div id="content">
             <nav class="topbar">
                 <div class="topbar__logo">
                     <img src="img/agencia-eplus-n-logo.png" alt="Logo">
@@ -27,39 +28,13 @@
                     <ul class="topbar__menu__user">
                         <li><img class="topbar__menu__icon" src="img/baseline-person-24px.svg" alt="Person"></li>
                         <li><img class="topbar__menu__icon" src="img/round-search-24px.svg" alt="Search"></li>
-                        <li><img class="topbar__menu__icon car" src="img/baseline-shopping_cart-24px.svg" alt="Cart"></li>
+                        <li><img id="button-cart" class="topbar__menu__icon car" src="img/baseline-shopping_cart-24px.svg" alt="Cart"></li>
                     </ul>
                 </div>
             </nav>
         </div>
-        <div class= "cart">
-            <div class="product">
-                <div class="product__image">teste</div>
-                <div class="product__description"> TITULO
-                    <span>QTY: 1</span> <span>Preço: R$988.00</span>
-                </div>
-            </div>
-
-             <div class="product">
-                <div class="product__image"> teste</div>
-                <div class="product__description"> TITULO
-                    <span>QTY: 1</span> <span>Preço: R$988.00</span>
-                </div>
-            </div>
-
-             <div class="product">
-                <div class="product__image"> teste</div>
-                <div class="product__description"> TITULO
-                    <span>QTY: 1</span> <span>Preço: R$988.00</span>
-                </div>
-            </div>
-
-            <div class="total">
-                <span class="valor__total">Total do pedido: R$ 20000,00 </span>
-            </div>
-            <button id="btn">Comprar</button>
-        </div>
-
+        <div id="content-cart" style="display:none"></div>
+        
 
         <main>
             <section id="products-list">
@@ -67,5 +42,6 @@
                 </div>
             </section>
         </main>
+        <script type="text/javascript" src="./js/cart.js"></script>
     </body>
 </html>

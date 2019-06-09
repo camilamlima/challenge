@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "E-Plus Frontend Challenge",
   "scripts": {
+    "server": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -14,8 +15,8 @@
     "url": "https://github.com/camilamlima/challenge/issues"
   },
   "homepage": "https://github.com/camilamlima/challenge#readme",
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "dependencies": {
+    "express": "^4.17.1"
   }
 }
