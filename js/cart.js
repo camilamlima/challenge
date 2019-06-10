@@ -10,9 +10,10 @@ cart_button.addEventListener("click", async (event) => {
           ${createProductDiv(arrayProducts)}
         </div>
         <div class="total">
-            <span class="valor__total">Total do pedido: R$ ${totalPrice(arrayProducts)} </span>
+            Total do pedido: 
+            <span class="valor__total">R$ ${totalPrice(arrayProducts)} </span>
         </div>
-        <button id="btn">Comprar</button>
+        <button id="btn">FINALIZAR COMPRA</button>
     </div>
   `
   toggleMiniCart(cart_content);
@@ -56,5 +57,5 @@ function totalPrice(products) {
   products.map(item => {
     total += item.bestPrice;
   });
-  return total.toLocaleString('pt-br');
+  return (total/100).toLocaleString('pt-br');
 }
