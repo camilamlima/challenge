@@ -36,3 +36,33 @@ Então mãos a obra e bom challenge ;)
 - Boa descrição das funcionalidades do desafio
 - Fidelidade ao design proposto
 - Adaptação mobile
+
+## Resolução
+
+### Instalação
+
+Para executar o projeto é necessário instalar o Node através do comando abaixo: 
+
+```bash
+$ npm install
+```
+ 
+### Execução
+
+Após instalado o Node para subir o projeto no servidor é necessário executar o comando abaixo:
+```bash
+$ npm run server
+```
+
+Para acessar o projeto no navegador pode ser acessado através do localhost: 3000 ou pela porta informada no console.
+
+Output
+```bash
+> challenge@1.0.0 server /path/environment/projects
+> node server.js
+
+Node server is running..
+Express server listening on port 3000
+Access http://localhost:3000
+```
+

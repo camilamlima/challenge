@@ -23,4 +23,5 @@ app.set('port', process.env.PORT || 3000);
 var server = app.listen(app.get('port'), function() {
   console.log('Node server is running..');
   console.log('Express server listening on port ' + server.address().port);
+  console.log('Access http://localhost:' + server.address().port);
 });
